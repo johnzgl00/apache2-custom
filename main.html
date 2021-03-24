@@ -26,7 +26,7 @@
 
     width: 800px;
 
-    margin-bottom: 3px;
+    border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
     padding: 0px 0px 0px 0px;
@@ -38,18 +38,19 @@
     background-color: #808080;
 
     text-align: center;
+    margin-top: 5%;
   }
 
   div.page_header {
     height: 99px;
     width: 100%;
-
+    border-radius: 10px;
     background-color: #707070;
   }
 
   div.page_header span {
     margin: 15px 0px 0px 50px;
-
+    border-radius: 10px;
     font-size: 180%;
     font-weight: bold;
   }
@@ -104,6 +105,14 @@
     font-size: 100%;
   }
 
+  div.content_section_text_1 {
+    padding: 4px 8px 4px 8px;
+    text-align:center;
+    color: #000000;
+    margin-bottom:1%;
+    font-size: 100%;
+  }
+
   div.content_section_text pre {
     margin: 8px 0px 8px 0px;
     padding: 8px 8px 8px 8px;
@@ -137,7 +146,7 @@
   }
 
   div.section_header_red {
-    background-color: #335634;
+    background-color: #000;
   }
 
   div.section_header_grey {
@@ -170,7 +179,7 @@
   div.content_section_text a:link,
   div.content_section_text a:visited,
    div.content_section_text a:active {
-    background-color: #DCDFE6;
+   /* background-color: #DCDFE6;*/
 
     color: #000000;
   }
@@ -221,8 +230,8 @@
         <div class="content_section_text">
           <p>
                 This is a hobbyist web server called Hacklog. It is only experimental and 
-		used for <b>educational</b> perposes. It is used as a blog for the projects
-		we make and run.
+    used for <b>educational</b> perposes. It is used as a blog for the projects
+    we make and run.
           </p>
 
 
@@ -230,29 +239,38 @@
                 If you are a new user of this web site and didn't know this page's existence,
                 this probably means that the administrator <b>has not</b> given you permition
                 to be in this web server. If this is the case we would ask you to leave this
-		page. When having permition, you can visit this page.
+    page. When having permition, you can visit this page.
           </p>
 
         </div>
         <div class="section_header">
           <div id="changes"></div>
-                Configuration Overview
+                Projects
         </div>
         <div class="content_section_text">
           <p>
-               <b>Projects list:</b>
+               <b>Projects list</b>
 
           </p>
           
           <ul>
                         <li>
-                           Usb raspberry pi 0
+                           Usb r-pi 0
                         </li>
 
                         <li>
-                           Raspberry pi 4 mini desktop pc
+                           R-pi 4 mini desktop pc
+                        </li>
+      <li>
+                           Web Server
                         </li>
 
+                        <li>
+                           blagon-bash-script
+                        </li>
+      <li>
+         R-pi4 portable device
+      </li>
                         
           </ul>
         </div>
@@ -262,21 +280,24 @@
                 Change Directories
         </div>
 
-        <div class="content_section_text">
+        <div class="content_section_text_1">
             <p>
-                By default, Debian does not allow access through the web browser to
-                <em>any</em> file apart of those located in <tt>/var/www</tt>,
-                <a href="http://httpd.apache.org/docs/2.4/mod/mod_userdir.html" rel="nofollow">public_html</a>
-                directories (when enabled) and <tt>/usr/share</tt> (for web
-                applications). If your site is using a web document root
-                located elsewhere (such as in <tt>/srv</tt>) you may need to whitelist your
-                document root directory in <tt>/etc/apache2/apache2.conf</tt>.
+    Use the links bellow to navigate:
             </p>
-            <p>
-                The default Debian document root is <tt>/var/www/html</tt>. You
-                can make your own virtual hosts under /var/www. This is different
-                to previous releases which provides better security out of the box.
-            </p>
+            <ul>
+      <span style="color: #808080">------</span>
+    </ul>
+    <!--<ul>
+      <span style="color: #808080">------</span>
+    </ul>-->
+    <ul>  
+            <a href="http://192.168.68.8" rel="nofollow"><b>Login Page</b></a>
+      <span style="color: #808080">------</span>      
+      <a href="http://192.168.68.8/downloads" rel="nofollow"><b>Downloads</b></a>
+              <span style="color: #808080">------</span>        
+      <a href="http://192.168.68.8/scripts" rel="nofollow"><b>Scripts</b></a>
+                  
+    </ul>
         </div>
 
         <div class="section_header">
